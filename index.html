@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Simple landing page</title>
+  <title>BI - Red de Monitoreo</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,19 +32,22 @@
             </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#header-section">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#header-section">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features-section">About</a>
+            <a class="nav-link" href="#features-section">Características</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#case-studies-section">Herramientas</a>  
+          </li>
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#digital-marketing-section">Blog</a>  
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#feedback-section">Testimonials</a>
-          </li>
+          </li> -->
           <li class="nav-item btn-contact-us pl-4 pl-lg-0">
-            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+            <button class="btn btn-info" onclick="window.open('mailto:admin@bieccamvd.com','_blank');">Contáctenos</button>
           </li>
         </ul>
       </div>
@@ -53,11 +56,11 @@
   </header>
   <div class="banner" >
     <div class="container">
-      <h1 class="font-weight-semibold">Search engine optimisation &<br>Marketing.</h1>
-      <h6 class="font-weight-normal text-muted pb-3">Simple is a simple template with a creative design that solves all your marketing and SEO queries.</h6>
+      <h1 class="font-weight-semibold">Red de Monitoreo<br>de la Calidad del Aire de Montevideo</h1>
+      <h6 class="font-weight-normal text-muted pb-3">Sistema de Business Intelligence para el análisis de datos de calidad del aire de Montevideo.</h6>
       <div>
-        <button class="btn btn-opacity-light mr-1">Get started</button>
-        <button class="btn btn-opacity-success ml-1">Learn more</button>
+        <button class="btn btn-opacity-light mr-1" onclick="window.open('https://analytics.bieccamvd.com/','_blank');">Comenzar</button>
+        <button class="btn btn-opacity-success ml-1" onclick="window.open('https://docs.bieccamvd.com/','_blank');">Conocer más</button>
       </div>
       <img src="images/Group171.svg" alt="" class="img-fluid">
     </div>
@@ -66,37 +69,34 @@
     <div class="container">
       <section class="features-overview" id="features-section" >
         <div class="content-header">
-          <h2>How does it works</h2>
-          <h6 class="section-subtitle text-muted">One theme that serves as an easy-to-use operational toolkit<br>that meets customer's needs.</h6>
+          <h2>¿Cómo funciona?</h2>
+          <h6 class="section-subtitle text-muted">Herramienta de BI con datos de mediciones actuales e históricas de las estaciones de la red,<br>de la actividad de distintas industrias y del volumen vehicular en las principales arterias de Montevideo,<br>que permite la gestión, análisis y generación de reportes.</h6>
         </div>
         <div class="d-md-flex justify-content-between">
           <div class="grid-margin d-flex justify-content-start">
             <div class="features-width">
               <img src="images/Group12.svg" alt="" class="img-icons">
-              <h5 class="py-3">Speed<br>Optimisation</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>  
+              <h5 class="py-3">Autonomía<br>en el uso</h5>
+              <p class="text-muted">Los usuarios finales disponen de la autonomía necesaria para generar sus propios informes, determinar los patrones de análisis y, en definitiva, ejecutar sus propias consultas sin necesidad de contar con la asistencia del personal de IT.</p>
             </div>
           </div>
           <div class="grid-margin d-flex justify-content-center">
             <div class="features-width">
               <img src="images/Group7.svg" alt="" class="img-icons">
-              <h5 class="py-3">SEO and<br>Backlinks</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>
+              <h5 class="py-3">Fácil importación<br>de datos</h5>
+              <p class="text-muted">El hecho de poder importar los datos fácilmente desde otras aplicaciones ajenas al software principal supone un gran ahorro de tiempo y costes por parte del departamento de IT.</p>
             </div>
           </div>
           <div class="grid-margin d-flex justify-content-end">
             <div class="features-width">
               <img src="images/Group5.svg" alt="" class="img-icons">
-              <h5 class="py-3">Content<br>Marketing</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>
+              <h5 class="py-3">Arquitectura<br>abierta</h5>
+              <p class="text-muted">Los programas que utilizan arquitectura y framework de open source ofrecen un mayor nivel de integración con otras plataformas. Además, no suponen las habituales restricciones ligadas a la utilización de herramientas propietarias, ni atan a tu departamento de IT a un único suministrador.</p>
             </div>
           </div>
         </div>
       </section>     
-      <section class="digital-marketing-service" id="digital-marketing-section">
+      <!-- <section class="digital-marketing-service" id="digital-marketing-section">
         <div class="row align-items-center">
           <div class="col-12 col-lg-7 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <h3 class="m-0">We Offer a Full Range<br>of Digital Marketing Services!</h3>
@@ -122,12 +122,12 @@
             <button class="btn btn-info">Readmore</button>
           </div>
         </div>
-      </section>     
+      </section>  -->    
       <section class="case-studies" id="case-studies-section">
         <div class="row grid-margin">
           <div class="col-12 text-center pb-5">
-            <h2>Our case studies</h2>
-            <h6 class="section-subtitle text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
+            <h2>Herramientas</h2>
+            <h6 class="section-subtitle text-muted">El sistema de Business Intelligence está compuesto por distintas herramientas para el análisis, gestión y monitoreo.</h6>
           </div>
           <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
             <div class="card color-cards">
@@ -138,14 +138,14 @@
                   </div>  
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Online marketing</h6>
-                      <button class="btn btn-white">Read More</button>
+                      <h6 class="text-white pb-2 px-3">Administre los datos</h6>
+                      <button class="btn btn-white" onclick="window.open('https://admin.bieccamvd.com','_blank');">Ir</button>
                     </div>
                   </div>
                 </div>   
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Online Marketing</h6>
-                    <p>Seo, Marketing</p>
+                    <h6 class="m-0 pb-1">Administración</h6>
+                    <p>Carga y actualización de datos</p>
                 </div>
               </div>
             </div>
@@ -159,14 +159,14 @@
                   </div>  
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Web Development</h6>
-                      <button class="btn btn-white">Read More</button>
+                      <h6 class="text-white pb-2 px-3">Ejecute análisis dinámicamente</h6>
+                      <button class="btn btn-white" onclick="window.open('https://analytics.bieccamvd.com','_blank');">Ir</button>
                     </div>
                   </div>
                 </div>   
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Development</h6>
-                    <p>Developing, Designing</p>
+                    <h6 class="m-0 pb-1">Análisis</h6>
+                    <p>Análisis multidimensionales</p>
                 </div>
               </div>
             </div>
@@ -180,14 +180,14 @@
                   </div>  
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Web Designing</h6>
-                      <button class="btn btn-white">Read More</button>
+                      <h6 class="text-white pb-2 px-3">Gestione la infraestructura</h6>
+                      <button class="btn btn-white" onclick="window.open('https://devops.bieccamvd.com','_blank');">Ir</button>
                     </div>
                   </div>
                 </div>   
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Designing</h6>
-                    <p>Designing, Developing</p>
+                    <h6 class="m-0 pb-1">Operaciones</h6>
+                    <p>Administración de la infraestructura</p>
                 </div>
               </div>
             </div>
@@ -201,21 +201,21 @@
                   </div>  
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Software Development</h6>
-                      <button class="btn btn-white">Read More</button>
+                      <h6 class="text-white pb-2 px-3">Visualice la performance del sistema</h6>
+                      <button class="btn btn-white" onclick="window.open('https://monitor.bieccamvd.com','_blank');">Ir</button>
                     </div>
                   </div>
                 </div>   
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Software Development</h6>
-                    <p>Developing, Designing</p>
+                    <h6 class="m-0 pb-1">Monitoreo</h6>
+                    <p>Monitoreo del sistema</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>     
-      <section class="customer-feedback" id="feedback-section">
+      <!-- <section class="customer-feedback" id="feedback-section">
         <div class="row">
           <div class="col-12 text-center pb-5">
             <h2>What our customers have to say</h2>
@@ -323,24 +323,24 @@
               </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="contact-us" id="contact-section">
         <div class="contact-us-bgimage grid-margin" >
           <div class="pb-4">
-            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Do you have any projects?</h4>
-            <h4 class="pt-1" data-aos="fade-down">Contact us</h4>
+            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">¿Quiere saber más?</h4>
+            <h4 class="pt-1" data-aos="fade-down">Contáctenos</h4>
           </div>
           <div data-aos="fade-up">
-            <button class="btn btn-rounded btn-outline-danger">Contact us</button>
+            <button class="btn btn-rounded btn-outline-danger" onclick="window.open('mailto:admin@bieccamvd.com','_blank');">Contáctenos</button>
           </div>          
         </div>
       </section>
-      <section class="contact-details" id="contact-details-section">
+      <!-- <section class="contact-details" id="contact-details-section">
         <div class="row text-center text-md-left">
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
             <img src="images/image2vector.svg" alt="" class="pb-2">
             <div class="pt-2">
-              <p class="text-muted m-0">mikayla_beer@feil.name</p>
+              <p class="text-muted m-0">admin@bieccamvd.com</p>
               <p class="text-muted m-0">906-179-8309</p>
             </div>         
           </div>
@@ -372,40 +372,10 @@
               </div>
           </div>
         </div>  
-      </section>
+      </section> -->
       <footer class="border-top">
-        <p class="text-center text-muted pt-4">Copyright © 2019<a href="https://www.bootstrapdash.com/" class="px-1">Bootstrapdash.</a>All rights reserved.</p>
+        <p class="text-center text-muted pt-4">Copyright © 2019<a href="https://bieccamvd.com/" class="px-1">Red de Monitoreo.</a>Todos los derechos reservados.</p>
       </footer>
-      <!-- Modal for Contact - us Button -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="Name">Name</label>
-                  <input type="text" class="form-control" id="Name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <label for="Message">Message</label>
-                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div> 
   </div>
   <script src="vendors/jquery/jquery.min.js"></script>
