@@ -10,3 +10,7 @@ services:
     restart: always
     ports:
       - "12000:80"
+    labels:
+    - traefik.frontend.rule=Host:www.bieccamvd.com,bieccamvd.com
+    - traefik.docker.network=bridge
+    - traefik.port=80
